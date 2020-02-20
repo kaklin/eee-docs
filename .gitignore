@@ -1,1 +1,4 @@
 *.sublime*
+.buildinfo
+objects.inv
+/docs/doctrees
