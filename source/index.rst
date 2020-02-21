@@ -3,18 +3,38 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to eee tips!
-====================================
+.. include:: ../README.rst
 
 .. toctree::
+   :caption: Device Physics
+   :maxdepth: 3
+
+   physics/physics
+
+.. toctree::
+   :caption: Semiconductor Devices
+   :maxdepth: 3
+
+   devices/pn_junction
+   devices/mos_cap
+   devices/mosfet
+
+.. toctree::
+   :caption: Passives
    :maxdepth: 2
-   :caption: Contents:
 
+   passives/discrete
+   passives/integrated
 
+.. toctree::
+   :caption: Circuits
+   :maxdepth: 3
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   circuits/current_mirrors
+   circuits/single_mos_amps
+   circuits/two_stage_amps
+   circuits/op_amps
+   circuits/op_amp_circuits
+   circuits/references
+   circuits/oscillators
+   circuits/regulators
