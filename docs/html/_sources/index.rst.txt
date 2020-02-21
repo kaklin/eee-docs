@@ -38,3 +38,10 @@
    circuits/references
    circuits/oscillators
    circuits/regulators
+
+
+.. toctree::
+	:caption: Tools
+	:maxdepth: 2
+
+	tools/eldo
