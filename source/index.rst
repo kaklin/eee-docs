@@ -27,6 +27,12 @@
    passives/integrated
 
 .. toctree::
+   :caption: Manufacture
+   :maxdepth: 2
+
+   manufacture/*
+
+.. toctree::
    :caption: Analog Circuits
    :maxdepth: 2
 
