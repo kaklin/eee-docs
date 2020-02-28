@@ -21,10 +21,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Current Mirrors" href="../circuits/current_mirrors.html" />
+    <link rel="next" title="Process Variations" href="../manufacture/process.html" />
     <link rel="prev" title="Discrete Components" href="discrete.html" /> 
 </head>
 
@@ -93,22 +93,49 @@
 <p class="caption"><span class="caption-text">Passives</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="discrete.html">Discrete Components</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Integrated Components</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Integrated Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#resistors">Resistors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#polysilicon">Polysilicon</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#well">Well</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Circuits</span></p>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#capacitors">Capacitors</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gate-capacitors">Gate Capacitors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metal-fringe-capacitors">Metal Fringe Capacitors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mim">MIM</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Manufacture</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/current_mirrors.html">Current Mirrors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/single_mos_amps.html">Single MOS Amplifiers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/two_stage_amps.html">Two Stage Amps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/op_amps.html">Operational Amplifiers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/op_amp_circuits.html">OP Amp Circuits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/references.html">References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/oscillators.html">Oscillators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/regulators.html">Regulators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manufacture/process.html">Process Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manufacture/techniques.html">Manufacturing Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manufacture/matching.html">Device Matching</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Analog Circuits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/current_mirrors.html">Current Mirrors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/single_mos_amps.html">Single MOS Amplifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/two_stage_amps.html">Two Stage Amps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/op_amps.html">Operational Amplifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/op_amp_circuits.html">OP Amp Circuits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/oscillators.html">Oscillators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/regulators.html">Regulators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/level_shifters.html">Level Shifters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Digital Circuits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../digital_circuits/counters.html">Counters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../digital_circuits/fsm.html">Finite State Machines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../digital_circuits/low_power.html">Low Power Techniques</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Tools</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tools/eldo.html">eldo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/explorer_assembler.html">Cadence ADE</a></li>
 </ul>
 
             
@@ -175,6 +202,28 @@
             
   <div class="section" id="integrated-components">
 <h1>Integrated Components<a class="headerlink" href="#integrated-components" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="resistors">
+<h2>Resistors<a class="headerlink" href="#resistors" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="polysilicon">
+<h3>Polysilicon<a class="headerlink" href="#polysilicon" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="well">
+<h3>Well<a class="headerlink" href="#well" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="capacitors">
+<h2>Capacitors<a class="headerlink" href="#capacitors" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="gate-capacitors">
+<h3>Gate Capacitors<a class="headerlink" href="#gate-capacitors" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="metal-fringe-capacitors">
+<h3>Metal Fringe Capacitors<a class="headerlink" href="#metal-fringe-capacitors" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="mim">
+<h3>MIM<a class="headerlink" href="#mim" title="Permalink to this headline">¶</a></h3>
+<p>Dedicated metal-insulator-metal capacitors</p>
+</div>
+</div>
 </div>
 
 
@@ -185,7 +234,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../circuits/current_mirrors.html" class="btn btn-neutral float-right" title="Current Mirrors" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../manufacture/process.html" class="btn btn-neutral float-right" title="Process Variations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="discrete.html" class="btn btn-neutral float-left" title="Discrete Components" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -21,10 +21,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -35,7 +35,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Regulators" href="../circuits/regulators.html" /> 
+    <link rel="next" title="Cadence ADE" href="explorer_assembler.html" />
+    <link rel="prev" title="Low Power Techniques" href="../digital_circuits/low_power.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -94,20 +95,34 @@
 <li class="toctree-l1"><a class="reference internal" href="../passives/discrete.html">Discrete Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../passives/integrated.html">Integrated Components</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Circuits</span></p>
+<p class="caption"><span class="caption-text">Manufacture</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/current_mirrors.html">Current Mirrors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/single_mos_amps.html">Single MOS Amplifiers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/two_stage_amps.html">Two Stage Amps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/op_amps.html">Operational Amplifiers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/op_amp_circuits.html">OP Amp Circuits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/references.html">References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/oscillators.html">Oscillators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../circuits/regulators.html">Regulators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manufacture/process.html">Process Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manufacture/techniques.html">Manufacturing Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manufacture/matching.html">Device Matching</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Analog Circuits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/current_mirrors.html">Current Mirrors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/single_mos_amps.html">Single MOS Amplifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/two_stage_amps.html">Two Stage Amps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/op_amps.html">Operational Amplifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/op_amp_circuits.html">OP Amp Circuits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/oscillators.html">Oscillators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/regulators.html">Regulators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/level_shifters.html">Level Shifters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Digital Circuits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../digital_circuits/counters.html">Counters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../digital_circuits/fsm.html">Finite State Machines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../digital_circuits/low_power.html">Low Power Techniques</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Tools</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">eldo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="explorer_assembler.html">Cadence ADE</a></li>
 </ul>
 
             
@@ -174,6 +189,12 @@
             
   <div class="section" id="eldo">
 <h1>eldo<a class="headerlink" href="#eldo" title="Permalink to this headline">¶</a></h1>
+<p>Stop simulation when signal OUTPUT rises past 0.3V.</p>
+<p>.EXTRACT XUP(V(OUTPUT), 0.3)
+.OPTION AUTOSTOP=1</p>
+<p>Exclude nets from global V probe</p>
+<p>.PROBE V EXCEPT=NET
++ EXCEPT=XI0.N*</p>
 </div>
 
 
@@ -184,8 +205,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="explorer_assembler.html" class="btn btn-neutral float-right" title="Cadence ADE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="../circuits/regulators.html" class="btn btn-neutral float-left" title="Regulators" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="../digital_circuits/low_power.html" class="btn btn-neutral float-left" title="Low Power Techniques" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

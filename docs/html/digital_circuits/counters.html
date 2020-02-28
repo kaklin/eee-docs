@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Single MOS Amplifiers &mdash; Electrical and Electronics Engineering Docs 0.1 documentation</title>
+  <title>Counters &mdash; Electrical and Electronics Engineering Docs 0.1 documentation</title>
   
 
   
@@ -21,10 +21,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Two Stage Amps" href="two_stage_amps.html" />
-    <link rel="prev" title="Current Mirrors" href="current_mirrors.html" /> 
+    <link rel="next" title="Finite State Machines" href="fsm.html" />
+    <link rel="prev" title="Level Shifters" href="../analog_circuits/level_shifters.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -95,20 +95,37 @@
 <li class="toctree-l1"><a class="reference internal" href="../passives/discrete.html">Discrete Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../passives/integrated.html">Integrated Components</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Circuits</span></p>
+<p class="caption"><span class="caption-text">Manufacture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../manufacture/process.html">Process Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manufacture/techniques.html">Manufacturing Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manufacture/matching.html">Device Matching</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Analog Circuits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/current_mirrors.html">Current Mirrors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/single_mos_amps.html">Single MOS Amplifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/two_stage_amps.html">Two Stage Amps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/op_amps.html">Operational Amplifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/op_amp_circuits.html">OP Amp Circuits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/oscillators.html">Oscillators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/regulators.html">Regulators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/level_shifters.html">Level Shifters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Digital Circuits</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="current_mirrors.html">Current Mirrors</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Single MOS Amplifiers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="two_stage_amps.html">Two Stage Amps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="op_amps.html">Operational Amplifiers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="op_amp_circuits.html">OP Amp Circuits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="oscillators.html">Oscillators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="regulators.html">Regulators</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Counters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#parallel-counters">Parallel Counters</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fsm.html">Finite State Machines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="low_power.html">Low Power Techniques</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Tools</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tools/eldo.html">eldo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/explorer_assembler.html">Cadence ADE</a></li>
 </ul>
 
             
@@ -154,13 +171,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>Single MOS Amplifiers</li>
+      <li>Counters</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/circuits/single_mos_amps.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/digital_circuits/counters.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -173,8 +190,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="single-mos-amplifiers">
-<h1>Single MOS Amplifiers<a class="headerlink" href="#single-mos-amplifiers" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="counters">
+<h1>Counters<a class="headerlink" href="#counters" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="parallel-counters">
+<h2>Parallel Counters<a class="headerlink" href="#parallel-counters" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -185,10 +205,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="two_stage_amps.html" class="btn btn-neutral float-right" title="Two Stage Amps" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="fsm.html" class="btn btn-neutral float-right" title="Finite State Machines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="current_mirrors.html" class="btn btn-neutral float-left" title="Current Mirrors" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../analog_circuits/level_shifters.html" class="btn btn-neutral float-left" title="Level Shifters" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

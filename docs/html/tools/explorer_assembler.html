@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>References &mdash; Electrical and Electronics Engineering Docs 0.1 documentation</title>
+  <title>Cadence ADE &mdash; Electrical and Electronics Engineering Docs 0.1 documentation</title>
   
 
   
@@ -21,10 +21,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -35,8 +35,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Oscillators" href="oscillators.html" />
-    <link rel="prev" title="OP Amp Circuits" href="op_amp_circuits.html" /> 
+    <link rel="prev" title="eldo" href="eldo.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -95,27 +94,39 @@
 <li class="toctree-l1"><a class="reference internal" href="../passives/discrete.html">Discrete Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../passives/integrated.html">Integrated Components</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Circuits</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="current_mirrors.html">Current Mirrors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="single_mos_amps.html">Single MOS Amplifiers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="two_stage_amps.html">Two Stage Amps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="op_amps.html">Operational Amplifiers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="op_amp_circuits.html">OP Amp Circuits</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">References</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#voltage-references">Voltage References</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#bandgap-reference">Bandgap Reference</a></li>
+<p class="caption"><span class="caption-text">Manufacture</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../manufacture/process.html">Process Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manufacture/techniques.html">Manufacturing Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manufacture/matching.html">Device Matching</a></li>
 </ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#current-references">Current References</a></li>
+<p class="caption"><span class="caption-text">Analog Circuits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/current_mirrors.html">Current Mirrors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/single_mos_amps.html">Single MOS Amplifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/two_stage_amps.html">Two Stage Amps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/op_amps.html">Operational Amplifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/op_amp_circuits.html">OP Amp Circuits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/oscillators.html">Oscillators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/regulators.html">Regulators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../analog_circuits/level_shifters.html">Level Shifters</a></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="oscillators.html">Oscillators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="regulators.html">Regulators</a></li>
+<p class="caption"><span class="caption-text">Digital Circuits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../digital_circuits/counters.html">Counters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../digital_circuits/fsm.html">Finite State Machines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../digital_circuits/low_power.html">Low Power Techniques</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Tools</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../tools/eldo.html">eldo</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="eldo.html">eldo</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Cadence ADE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#useful-expressions">Useful Expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#explorer">Explorer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#assembler">Assembler</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -161,13 +172,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>References</li>
+      <li>Cadence ADE</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/circuits/references.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/tools/explorer_assembler.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -180,16 +191,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="references">
-<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="voltage-references">
-<h2>Voltage References<a class="headerlink" href="#voltage-references" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="bandgap-reference">
-<h3>Bandgap Reference<a class="headerlink" href="#bandgap-reference" title="Permalink to this headline">¶</a></h3>
+  <div class="section" id="cadence-ade">
+<h1>Cadence ADE<a class="headerlink" href="#cadence-ade" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="useful-expressions">
+<h2>Useful Expressions<a class="headerlink" href="#useful-expressions" title="Permalink to this headline">¶</a></h2>
+<p>Plot a digital bus from analog waveforms</p>
+<p>awvCreateBus(“BUSNAME” awvAnalog2Digital(list(VT(“/signal1”) VT(“/signal2”)) nil nil 0.5 nil “centre”) “Unsigned Decimal”)</p>
+<p>Extend list() as needed, MSB first.
+0.5 is the threshold.
+“Unsigned Decimal” can be one of: “Binary” “Signed Decimal”</p>
 </div>
+<div class="section" id="explorer">
+<h2>Explorer<a class="headerlink" href="#explorer" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="current-references">
-<h2>Current References<a class="headerlink" href="#current-references" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="assembler">
+<h2>Assembler<a class="headerlink" href="#assembler" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -201,10 +217,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="oscillators.html" class="btn btn-neutral float-right" title="Oscillators" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="op_amp_circuits.html" class="btn btn-neutral float-left" title="OP Amp Circuits" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="eldo.html" class="btn btn-neutral float-left" title="eldo" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

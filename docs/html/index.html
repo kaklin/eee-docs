@@ -21,10 +21,10 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -94,20 +94,34 @@
 <li class="toctree-l1"><a class="reference internal" href="passives/discrete.html">Discrete Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="passives/integrated.html">Integrated Components</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Circuits</span></p>
+<p class="caption"><span class="caption-text">Manufacture</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="circuits/current_mirrors.html">Current Mirrors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/single_mos_amps.html">Single MOS Amplifiers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/two_stage_amps.html">Two Stage Amps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/op_amps.html">Operational Amplifiers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/op_amp_circuits.html">OP Amp Circuits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/references.html">References</a></li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/oscillators.html">Oscillators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/regulators.html">Regulators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manufacture/process.html">Process Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manufacture/techniques.html">Manufacturing Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manufacture/matching.html">Device Matching</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Analog Circuits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/current_mirrors.html">Current Mirrors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/single_mos_amps.html">Single MOS Amplifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/two_stage_amps.html">Two Stage Amps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/op_amps.html">Operational Amplifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/op_amp_circuits.html">OP Amp Circuits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/references.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/oscillators.html">Oscillators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/regulators.html">Regulators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/level_shifters.html">Level Shifters</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Digital Circuits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="digital_circuits/counters.html">Counters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="digital_circuits/fsm.html">Finite State Machines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="digital_circuits/low_power.html">Low Power Techniques</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Tools</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="tools/eldo.html">eldo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/explorer_assembler.html">Cadence ADE</a></li>
 </ul>
 
             
@@ -192,34 +206,86 @@
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Passives</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="passives/discrete.html">Discrete Components</a></li>
-<li class="toctree-l1"><a class="reference internal" href="passives/integrated.html">Integrated Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="passives/discrete.html">Discrete Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="passives/discrete.html#resistors">Resistors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="passives/discrete.html#capacitors">Capacitors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="passives/discrete.html#inductors">Inductors</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="passives/integrated.html">Integrated Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="passives/integrated.html#resistors">Resistors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="passives/integrated.html#capacitors">Capacitors</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Circuits</span></p>
+<p class="caption"><span class="caption-text">Manufacture</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="circuits/current_mirrors.html">Current Mirrors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/single_mos_amps.html">Single MOS Amplifiers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/two_stage_amps.html">Two Stage Amps</a></li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/op_amps.html">Operational Amplifiers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/op_amp_circuits.html">OP Amp Circuits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/references.html">References</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="circuits/references.html#voltage-references">Voltage References</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="circuits/references.html#bandgap-reference">Bandgap Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manufacture/process.html">Process Variations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manufacture/process.html#process-corners">Process Corners</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufacture/process.html#global-process-variations">Global Process Variations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufacture/process.html#local-mismatch">Local Mismatch</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manufacture/process.html#monte-carlo-simulation">Monte Carlo Simulation</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="circuits/references.html#current-references">Current References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manufacture/techniques.html">Manufacturing Techniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manufacture/matching.html">Device Matching</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Analog Circuits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/current_mirrors.html">Current Mirrors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/single_mos_amps.html">Single MOS Amplifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/two_stage_amps.html">Two Stage Amps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/op_amps.html">Operational Amplifiers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/op_amp_circuits.html">OP Amp Circuits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/references.html">References</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="analog_circuits/references.html#voltage-references">Voltage References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analog_circuits/references.html#current-references">Current References</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/oscillators.html">Oscillators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="circuits/regulators.html">Regulators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/oscillators.html">Oscillators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/regulators.html">Regulators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analog_circuits/level_shifters.html">Level Shifters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="analog_circuits/level_shifters.html#low-to-high">Low to High</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analog_circuits/level_shifters.html#high-to-low">High to Low</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Digital Circuits</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="digital_circuits/counters.html">Counters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="digital_circuits/counters.html#parallel-counters">Parallel Counters</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="digital_circuits/fsm.html">Finite State Machines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="digital_circuits/fsm.html#verilog-template">Verilog Template</a></li>
+<li class="toctree-l2"><a class="reference internal" href="digital_circuits/fsm.html#resources">Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="digital_circuits/low_power.html">Low Power Techniques</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="digital_circuits/low_power.html#power-gating">Power Gating</a></li>
+<li class="toctree-l2"><a class="reference internal" href="digital_circuits/low_power.html#state-retention">State Retention</a></li>
+<li class="toctree-l2"><a class="reference internal" href="digital_circuits/low_power.html#output-isolation">Output Isolation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="digital_circuits/low_power.html#clock-gating">Clock Gating</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Tools</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="tools/eldo.html">eldo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/explorer_assembler.html">Cadence ADE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tools/explorer_assembler.html#useful-expressions">Useful Expressions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/explorer_assembler.html#explorer">Explorer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools/explorer_assembler.html#assembler">Assembler</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>

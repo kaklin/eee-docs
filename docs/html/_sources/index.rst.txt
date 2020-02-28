@@ -27,21 +27,41 @@
    passives/integrated
 
 .. toctree::
-   :caption: Circuits
-   :maxdepth: 3
+   :caption: Manufacture
+   :maxdepth: 2
 
-   circuits/current_mirrors
-   circuits/single_mos_amps
-   circuits/two_stage_amps
-   circuits/op_amps
-   circuits/op_amp_circuits
-   circuits/references
-   circuits/oscillators
-   circuits/regulators
-
+   manufacture/process
+   manufacture/techniques
+   manufacture/matching
 
 .. toctree::
-	:caption: Tools
-	:maxdepth: 2
+   :caption: Analog Circuits
+   :maxdepth: 2
 
-	tools/eldo
+   analog_circuits/current_mirrors
+   analog_circuits/single_mos_amps
+   analog_circuits/two_stage_amps
+   analog_circuits/op_amps
+   analog_circuits/op_amp_circuits
+   analog_circuits/references
+   analog_circuits/oscillators
+   analog_circuits/regulators
+   analog_circuits/level_shifters
+
+.. toctree::
+   :caption: Digital Circuits
+   :maxdepth: 2
+
+   digital_circuits/counters
+   digital_circuits/fsm
+   digital_circuits/low_power
+
+.. toctree::
+   :caption: Tools
+   :maxdepth: 2
+
+   tools/eldo
+   tools/explorer_assembler
+
+
+
