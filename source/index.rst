@@ -56,4 +56,4 @@
 	:caption: Tools
 	:maxdepth: 2
 
-	tools/eldo
+	tools/*
