@@ -30,7 +30,9 @@
    :caption: Manufacture
    :maxdepth: 2
 
-   manufacture/*
+   manufacture/process
+   manufacture/techniques
+   manufacture/matching
 
 .. toctree::
    :caption: Analog Circuits
@@ -50,10 +52,16 @@
    :caption: Digital Circuits
    :maxdepth: 2
 
-   digital_circuits/*
+   digital_circuits/counters
+   digital_circuits/fsm
+   digital_circuits/low_power
 
 .. toctree::
-	:caption: Tools
-	:maxdepth: 2
+   :caption: Tools
+   :maxdepth: 2
 
-	tools/*
+   tools/eldo
+   tools/explorer_assembler
+
+
+
