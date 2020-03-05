@@ -63,10 +63,13 @@
    tools/eldo
    tools/explorer_assembler
 
+<<<<<<< HEAD
 .. toctree::
    :caption: Resources
-   :maxdepth: 0
+   :maxdepth: 1
 
    resources/analog
+=======
+>>>>>>> parent of 53ae649... Add resources section
 
 
