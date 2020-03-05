@@ -65,7 +65,7 @@
 
 .. toctree::
    :caption: Resources
-   :maxdepth: 2
+   :maxdepth: 1
 
    resources/analog
 
