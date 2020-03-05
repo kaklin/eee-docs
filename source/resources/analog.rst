@@ -1,0 +1,18 @@
+======
+Analog
+======
+
+Books
+=====
+Behzad Razavi - Design of analog CMOS integrated circuits
+
+
+Willy Sansen - `Analog Design Essentials`_ (Springer Link)
+
+.. _Analog Design Essentials : https://www.springer.com/gp/book/9780387257464 Sansen - 
+
+Lectures
+========
+Behzad Razavi - `Electronic Circuits 1`_
+
+.. _Electronic Circuits 1 : http://www.infocobuild.com/education/audio-video-courses/electronics/ElectronicCircuits-BehzadRazavi/lecture-01.html

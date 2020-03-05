@@ -63,5 +63,11 @@
    tools/eldo
    tools/explorer_assembler
 
+.. toctree::
+   :caption: Resources
+   :maxdepth: 2
+
+   resources/analog
+
 
 
