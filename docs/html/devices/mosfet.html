@@ -25,6 +25,7 @@
         <script type="text/javascript" src="../_static/underscore.js"></script>
         <script type="text/javascript" src="../_static/doctools.js"></script>
         <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -88,7 +89,16 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="pn_junction.html">p-n junction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mos_cap.html">MOS Capacitor</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">MOSFET</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MOSFET</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#threshold-voltage">Threshold Voltage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#operating-regions">Operating Regions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sub-threshold">Sub-threshold</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#linear-region">Linear region</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#saturation-region">Saturation region</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Passives</span></p>
 <ul>
@@ -193,6 +203,56 @@
             
   <div class="section" id="mosfet">
 <h1>MOSFET<a class="headerlink" href="#mosfet" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="threshold-voltage">
+<h2>Threshold Voltage<a class="headerlink" href="#threshold-voltage" title="Permalink to this headline">¶</a></h2>
+<p>Dependent on the MOSFET material properties which are determined by the manufacture process.</p>
+<div class="math notranslate nohighlight">
+\[V_t = 2\phi_b + \frac{\sqrt{2 \epsilon_{Si} q N_A 2\phi_b} }{C_{ox}} + V_{fb}\]</div>
+<p><span class="math notranslate nohighlight">\(\phi_b'=V_T ln(\frac{N_A}{n_i})\)</span></p>
+<p><strong>Body Effect</strong></p>
+</div>
+<div class="section" id="operating-regions">
+<h2>Operating Regions<a class="headerlink" href="#operating-regions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sub-threshold">
+<h3>Sub-threshold<a class="headerlink" href="#sub-threshold" title="Permalink to this headline">¶</a></h3>
+<p>Also referred to as cutoff region, or operating in weak-inversion.</p>
+<p>Conditional on <span class="math notranslate nohighlight">\(V_{GS} &lt; V_t\)</span>.</p>
+<p>In the simplistic case, there is no current flow in this region, i.e.:</p>
+<div class="math notranslate nohighlight">
+\[I_D = 0\]</div>
+<p>Subthreshold current</p>
+</div>
+<div class="section" id="linear-region">
+<h3>Linear region<a class="headerlink" href="#linear-region" title="Permalink to this headline">¶</a></h3>
+<p>Also known as the triode mode, or ohmic mode.</p>
+<p>Conditional on <span class="math notranslate nohighlight">\(V_{GS} &gt; V_t\)</span> and <span class="math notranslate nohighlight">\(V_{DS} &lt; V_{GS}-V_t\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[I_D = \mu C_{ox} \frac{W}{L} \left[(V_{GS} - V_t)V_{DS} - \frac{V_{DS}^2}{2}\right] (1+ \lambda V_{DS})\]</div>
+</div>
+<div class="section" id="saturation-region">
+<h3>Saturation region<a class="headerlink" href="#saturation-region" title="Permalink to this headline">¶</a></h3>
+<p>Conditional on <span class="math notranslate nohighlight">\(V_{GS} &gt; V_t\)</span> and <span class="math notranslate nohighlight">\(V_{DS} &gt; V_{GS}-V_t\)</span>.</p>
+<p>DC current:</p>
+<div class="math notranslate nohighlight">
+\[I_D = \frac{1}{2} \mu C_{ox} \frac{W}{L} (V_{GS} - V_t)^2 (1+ \lambda V_{DS})\]</div>
+<p>Small signal transconductance:</p>
+<div class="math notranslate nohighlight">
+\[g_m=\]</div>
+<p><strong>Term Definitions and Useful Equations</strong></p>
+<p><span class="math notranslate nohighlight">\(V_{GS}-V_t\)</span> is the overdrive voltage, also referred to as <span class="math notranslate nohighlight">\(V_{DSsat}\)</span>, or <span class="math notranslate nohighlight">\(V_{ov}\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(V_T\)</span> is the thermal voltage <span class="math notranslate nohighlight">\(V_T=kT/q\)</span>, where  <span class="math notranslate nohighlight">\(T\)</span> is the absolute temperature in Kelvin, <span class="math notranslate nohighlight">\(k\)</span> is the Boltzman constant and <span class="math notranslate nohighlight">\(q\)</span> is the elementary charge.</p>
+<p><span class="math notranslate nohighlight">\(V_T=25.86\)</span> mV at 300K.</p>
+<p><span class="math notranslate nohighlight">\(K'=\mu_0 C_{ox}\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{ox}=\epsilon_{ox} / t_{ox}\)</span></p>
+<p><span class="math notranslate nohighlight">\(\beta = K' \frac{W}{L}\)</span></p>
+<p><strong>Constants</strong></p>
+<p><span class="math notranslate nohighlight">\(k=1.3806e^{-23}\)</span> J⋅K<sup>-1</sup> - Boltzmann constant</p>
+<p><span class="math notranslate nohighlight">\(q=1.602e^{-19}\)</span> C - elementary charge</p>
+<p><span class="math notranslate nohighlight">\(\epsilon_0=8.854\)</span> pF⋅m<sup>-1</sup> - permittivity of free space</p>
+<p><span class="math notranslate nohighlight">\(\epsilon_{Si}=11.7 \epsilon_0\)</span></p>
+<p><span class="math notranslate nohighlight">\(\epsilon_{ox}=3.9 \epsilon_0\)</span></p>
+</div>
+</div>
 </div>
 
 
