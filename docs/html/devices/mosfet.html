@@ -208,8 +208,12 @@
 <p>Dependent on the MOSFET material properties which are determined by the manufacture process.</p>
 <div class="math notranslate nohighlight">
 \[V_t = 2\phi_b + \frac{\sqrt{2 \epsilon_{Si} q N_A 2\phi_b} }{C_{ox}} + V_{fb}\]</div>
-<p><span class="math notranslate nohighlight">\(\phi_b'=V_T ln(\frac{N_A}{n_i})\)</span></p>
+<p>where <span class="math notranslate nohighlight">\(\phi_b=V_T \ln{(\frac{N_A}{n_i})}\)</span> is the bulk potential, <span class="math notranslate nohighlight">\(N_A\)</span> is carrier density in the doped substrate, <span class="math notranslate nohighlight">\(n_i\)</span> is the intrinsic carrier concentration in undoped silicon</p>
 <p><strong>Body Effect</strong></p>
+<div class="math notranslate nohighlight">
+\[V_t=V_{t0} - \gamma(\sqrt{\phi + V_{BS}}-\sqrt{\phi})\]</div>
+<div class="math notranslate nohighlight">
+\[\gamma = \frac{\sqrt{2\epsilon_{Si}qN}}{C_{ox}}\]</div>
 </div>
 <div class="section" id="operating-regions">
 <h2>Operating Regions<a class="headerlink" href="#operating-regions" title="Permalink to this headline">¶</a></h2>
@@ -217,10 +221,20 @@
 <h3>Sub-threshold<a class="headerlink" href="#sub-threshold" title="Permalink to this headline">¶</a></h3>
 <p>Also referred to as cutoff region, or operating in weak-inversion.</p>
 <p>Conditional on <span class="math notranslate nohighlight">\(V_{GS} &lt; V_t\)</span>.</p>
-<p>In the simplistic case, there is no current flow in this region, i.e.:</p>
+<p><strong>Simple</strong></p>
 <div class="math notranslate nohighlight">
 \[I_D = 0\]</div>
-<p>Subthreshold current</p>
+<p><strong>More accurate</strong></p>
+<div class="math notranslate nohighlight">
+\[I_D = \mu C_{ox} \frac{W}{L} V_T^2 (n-1) e^{\frac{V_{GS}-V_t}{nV_T}} (1-e^{\frac{-V_{DS}}{V_T}})\]</div>
+<p>where <span class="math notranslate nohighlight">\(n = \frac{C_{ox} + C_{dep}}{C_{ox}} &gt; 1\)</span></p>
+<p>We can also define the subthreshold swing <span class="math notranslate nohighlight">\(S\)</span> , that is the change in <span class="math notranslate nohighlight">\(V_{GS}\)</span> needed for a 10 times change in current.</p>
+<div class="math notranslate nohighlight">
+\[I_D \propto e^{\frac{V_{GS}}{nV_T}}\]</div>
+<div class="math notranslate nohighlight">
+\[\Delta V_{GS} = n V_T \ln{10}\]</div>
+<div class="math notranslate nohighlight">
+\[S = n \times 60 \text{mV per decade}\]</div>
 </div>
 <div class="section" id="linear-region">
 <h3>Linear region<a class="headerlink" href="#linear-region" title="Permalink to this headline">¶</a></h3>

@@ -11,15 +11,18 @@ Dependent on the MOSFET material properties which are determined by the manufact
 
 	V_t = 2\phi_b + \frac{\sqrt{2 \epsilon_{Si} q N_A 2\phi_b} }{C_{ox}} + V_{fb}
 
-:math:`\phi_b'=V_T ln(\frac{N_A}{n_i})`
+where :math:`\phi_b=V_T \ln{(\frac{N_A}{n_i})}` is the bulk potential, :math:`N_A` is carrier density in the doped substrate, :math:`n_i` is the intrinsic carrier concentration in undoped silicon
+
 
 **Body Effect**
 
+.. math:: V_t=V_{t0} - \gamma(\sqrt{\phi + V_{BS}}-\sqrt{\phi})
+
+.. math:: \gamma = \frac{\sqrt{2\epsilon_{Si}qN}}{C_{ox}}
 
 
 Operating Regions
 =================
-
 
 Sub-threshold
 -------------
@@ -27,13 +30,27 @@ Also referred to as cutoff region, or operating in weak-inversion.
 
 Conditional on :math:`V_{GS} < V_t`.
 
-In the simplistic case, there is no current flow in this region, i.e.:
+**Simple**
 
 .. math:: 
 
 	I_D = 0
 
-Subthreshold current 
+**More accurate**
+
+.. math:: 
+
+	I_D = \mu C_{ox} \frac{W}{L} V_T^2 (n-1) e^{\frac{V_{GS}-V_t}{nV_T}} (1-e^{\frac{-V_{DS}}{V_T}})
+
+where :math:`n = \frac{C_{ox} + C_{dep}}{C_{ox}} > 1`
+
+We can also define the subthreshold swing :math:`S` , that is the change in :math:`V_{GS}` needed for a 10 times change in current.
+
+.. math:: I_D \propto e^{\frac{V_{GS}}{nV_T}}
+
+.. math::  \Delta V_{GS} = n V_T \ln{10}
+
+.. math:: S = n \times 60 \text{mV per decade}
 
 Linear region
 -------------
