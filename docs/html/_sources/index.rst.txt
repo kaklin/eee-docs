@@ -68,6 +68,7 @@
    :maxdepth: 1
 
    resources/analog
+   resources/digital
 
 
 
