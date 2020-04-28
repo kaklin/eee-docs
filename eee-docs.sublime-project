@@ -1,0 +1,17 @@
+{
+	"build_systems":
+	[
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "make html",
+			"selector": "source.rst",
+			"shell_cmd": "$project_path\\make clean & $project_path\\make html"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	]
+}

@@ -1,4 +1,4 @@
-*.sublime*
+*.sublime-workspace
 .buildinfo
 objects.inv
 /docs/doctrees
