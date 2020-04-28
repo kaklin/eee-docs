@@ -5,7 +5,15 @@
 			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 			"name": "make html",
 			"selector": "source.rst",
-			"shell_cmd": "$project_path\\make clean & $project_path\\make html"
+			"working_dir" : "$project_path",
+			"linux" : 
+			{
+				"shell_cmd" : "make clean & make html"
+			},
+			"windows" : 
+			{
+				"cmd": "$project_path\\make clean & $project_path\\make html"
+			}
 		}
 	],
 	"folders":
