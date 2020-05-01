@@ -196,11 +196,15 @@
   <div class="section" id="eldo">
 <h1>eldo<a class="headerlink" href="#eldo" title="Permalink to this headline">¶</a></h1>
 <p>Stop simulation when signal OUTPUT rises past 0.3V.</p>
-<p>.EXTRACT XUP(V(OUTPUT), 0.3)
-.OPTION AUTOSTOP=1</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span><span class="n">EXTRACT</span> <span class="n">XUP</span><span class="p">(</span><span class="n">V</span><span class="p">(</span><span class="n">OUTPUT</span><span class="p">),</span> <span class="mf">0.3</span><span class="p">)</span>
+<span class="o">.</span><span class="n">OPTION</span> <span class="n">AUTOSTOP</span><span class="o">=</span><span class="mi">1</span>
+</pre></div>
+</div>
 <p>Exclude nets from global V probe</p>
-<p>.PROBE V EXCEPT=NET
-+ EXCEPT=XI0.N*</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span><span class="n">PROBE</span> <span class="n">V</span> <span class="n">EXCEPT</span><span class="o">=</span><span class="n">NET</span>
+<span class="o">+</span> <span class="n">EXCEPT</span><span class="o">=</span><span class="n">XI0</span><span class="o">.</span><span class="n">N</span><span class="o">*</span>
+</pre></div>
+</div>
 </div>
 
 
