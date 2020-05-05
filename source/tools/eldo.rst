@@ -13,5 +13,7 @@ Exclude nets from global V probe
 
 .. code::
 
-	.PROBE V EXCEPT=NET
-	+ EXCEPT=XI0.N*
+	.PROBE V 
+	+ EXCEPT=NET*     ! Remove all nets not explicitly named
+	+ EXCEPT=XI0.NET* ! Remove all not explicitly named nets in XI0
+	+ EXCEPT=X*.XG*   ! Remove all nets inside digital gates 
