@@ -25,6 +25,8 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
         <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
@@ -34,6 +36,7 @@
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Low Power Techniques" href="low_power.html" />
@@ -119,7 +122,6 @@
 <li class="toctree-l1"><a class="reference internal" href="counters.html">Counters</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Finite State Machines</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#verilog-template">Verilog Template</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#resources">Resources</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="low_power.html">Low Power Techniques</a></li>
@@ -201,10 +203,94 @@
 <h1>Finite State Machines<a class="headerlink" href="#finite-state-machines" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="verilog-template">
 <h2>Verilog Template<a class="headerlink" href="#verilog-template" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>module fsm_template (
+    input wire clk_slow, reset_n,
+
+    // inputs
+    input wire i_input_signal,
+
+    // outputs
+    output reg o_output_signal,
+
+);
+
+// State name definitions
+typedef enum logic[1:0] {STATE_1,
+                         STATE_2,
+                         STATE_3,
+                         STATE_4,
+                         } em_state;
+em_state state, state_next;
+
+// Timer
+reg [7:0] timer;  // Resize to store the max value of the timers below
+localparam T_WAIT = 128;
+
+// Sequential logic to update state
+always @(posedge clk or negedge reset_n) begin : proc_state_change
+    if(!reset_n) begin
+        state &lt;= STATE_1;
+    end else begin
+        state &lt;= state_next;
+    end
+end
+
+// Combinational logic to update next state, and the outputs in each state
+always_comb begin : proc_next_state_and_output
+
+    // Default next state is current state
+    state_next = state;
+
+    // Default outputs
+    o_output_signal = 0
+
+    case (state)
+        STATE_1    : begin
+                        o_output_signal = 1;
+
+                        state_next = STATE_2;
+                     end
+        STATE_2    : begin
+                        if (i_input_signal) begin
+                            o_output_signal = 1;
+                        end
+
+                        state_next = STATE_3;
+                     end
+        STATE_3    : begin
+                        if (timer &gt; T_WAIT) begin
+                            state_next = STATE_4;
+                        end
+                     end
+        STATE_4    : begin
+                        state_next = STATE_1;
+                     end
+
+        default    : begin
+                        state_next = STATE_1;
+                     end
+    endcase
+end
+
+
+// Timer
+always @(posedge clk or negedge reset_n) begin
+    if (!reset_n) begin
+        timer &lt;= 0;
+    end
+    else begin
+        if (state != state_next) begin  // state is changing
+            timer &lt;= 0;
+        end
+        else begin
+            timer &lt;= timer + 1;
+        end
+    end
+end
+
+endmodule // fsm_template
+</pre></div>
 </div>
-<div class="section" id="resources">
-<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
-<p>Link to state machine cat for generating state diagrams</p>
 </div>
 </div>
 
