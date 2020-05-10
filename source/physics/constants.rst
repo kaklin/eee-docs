@@ -30,7 +30,7 @@ Relative Permittivities
 =======================
 
 .. math::
-    \varepsilon = \frac{\varepsilon_r}{\varepsilon_0}
+    \varepsilon_r = \frac{\varepsilon}{\varepsilon_0}
 
 ================ ============
 Vacuum           1
