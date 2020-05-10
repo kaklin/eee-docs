@@ -6,10 +6,11 @@
 .. include:: ../README.rst
 
 .. toctree::
-   :caption: Device Physics
+   :caption: Physics
    :maxdepth: 3
 
    physics/physics
+   physics/constants
 
 .. toctree::
    :caption: Semiconductor Devices
@@ -67,8 +68,10 @@
    :caption: Resources
    :maxdepth: 1
 
+   resources/physics
    resources/analog
    resources/digital
+   resources/utils_py
 
 
 
