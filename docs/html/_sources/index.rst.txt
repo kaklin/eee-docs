@@ -10,6 +10,7 @@
    :maxdepth: 3
 
    physics/physics
+   physics/bandgap
    physics/constants
 
 .. toctree::
