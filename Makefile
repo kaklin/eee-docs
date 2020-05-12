@@ -4,7 +4,7 @@
 # You can set these variables from the command line, and also
 # from the environment for the first two.
 SPHINXOPTS    ?=
-SPHINXBUILD   ?= sphinx-build
+SPHINXBUILD   ?= ./eee-venv/bin/sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = docs
 
@@ -14,7 +14,17 @@ help:
 
 .PHONY: help Makefile
 
-# Catch-all target: route all unknown targets to Sphinx using the new
-# "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
+venv:
+	$(PYTHON) -m venv venv
+	./venv/bin/python3 -m pip install -r requirements.txt
+
+clean:
+	-rm -rf $(BUILDDIR)/html*
+	-rm -rf $(BUILDDIR)/doctrees*
+	-rm -rf $(BUILDDIR)/plot_directive*
+
+html:
+	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)

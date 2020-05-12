@@ -5,7 +5,7 @@
 			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 			"linux":
 			{
-				"shell_cmd": "make clean & make html"
+				"shell_cmd": "make clean && make html"
 			},
 			"name": "make html",
 			"selector": "source.rst",
