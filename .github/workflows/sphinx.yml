@@ -24,3 +24,9 @@ jobs:
     - name: Placeholder
       run: |
         echo "Placeholder"
+        pwd
+        ls
+    - name: sphinx
+      run: |
+        make clean
+        make html
