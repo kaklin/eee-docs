@@ -4,7 +4,11 @@
 # You can set these variables from the command line, and also
 # from the environment for the first two.
 SPHINXOPTS    ?=
-SPHINXBUILD   ?= ./eee-venv/bin/sphinx-build
+ifdef $(GITACTION)
+	SPHINXBUILD   ?= ./eee-venv/bin/sphinx-build
+else
+	SPHINXBUILD   ?= sphinx-build
+endif
 SOURCEDIR     = source
 BUILDDIR      = docs
 
