@@ -37,7 +37,8 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add docs/*
+        git add docs/html/*
+        git add docs/plot_directive/*
         git commit -m "automatic commit"
     - name: Push changes
       uses: ad-m/github-push-action@master
