@@ -2,7 +2,8 @@ name: sphinx-build
 
 on:
   push:
-    branches: [ master ]
+    paths:
+      - 'source/*'
 
 env:
   GITACTION: true
