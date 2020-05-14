@@ -40,7 +40,6 @@ jobs:
         git add docs/html/*
         git add docs/plot_directive/*
         git commit -m "automatic commit"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        git status
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v2
