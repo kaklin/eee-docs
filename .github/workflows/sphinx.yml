@@ -36,4 +36,4 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v2
       with:
-        commit-message: {{env.COMMIT_MESSAGE}}
+        commit-message: ${{ env.COMMIT_MESSAGE }}
