@@ -1,13 +1,11 @@
-# Minimal makefile for Sphinx documentation
-#
-
 # You can set these variables from the command line, and also
 # from the environment for the first two.
+
 SPHINXOPTS    ?=
-ifdef $(GITACTION)
-	SPHINXBUILD   ?= ./eee-venv/bin/sphinx-build
-else
+ifeq ($(GITHUB_ACTIONS), true)
 	SPHINXBUILD   ?= sphinx-build
+else
+	SPHINXBUILD   ?= ./eee-venv/bin/sphinx-build
 endif
 SOURCEDIR     = source
 BUILDDIR      = docs
