@@ -31,7 +31,9 @@ jobs:
       run: |
         make clean
         make html
+        last_commit=`git log -1 --pretty=%B`
+        export COMMIT_MESSAGE=`echo $last_commit "[auto-build]"`
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v2
       with:
-        commit-message: "automatic docs build"
+        commit-message: {{env.COMMIT_MESSAGE}}
