@@ -29,7 +29,17 @@ jobs:
         echo "Placeholder"
         pwd
         ls
-    - name: sphinx
+    - name: Sphinx Make
       run: |
         make clean
         make html
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add docs/*
+        git commit -m "automatic commit"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
