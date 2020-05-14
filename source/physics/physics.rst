@@ -11,3 +11,5 @@ Semiconductor Fundamentals
 :math:`p=\frac{h}{\lambda}` - momentum of a photon.
 
 :math:`E_k = E_p - \Phi_m` - kinetic energy of an electron released from a metal by a photon with energy :math:`E_p`.
+
+try a new commit message.
