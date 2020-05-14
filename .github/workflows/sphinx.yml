@@ -32,8 +32,12 @@ jobs:
         make clean
         make html
         last_commit=`git log -1 --pretty=%B`
-        export COMMIT_MESSAGE=`echo $last_commit "[auto-build]"`
+        export MSG=`echo $last_commit "[auto-build]"`
+        echo "::set-env name=COMMIT_MESSAGE::MSG"
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v2
+      env:
+        COMMIT_MESSAGE: ${{ env.COMMIT_MESSAGE }}
       with:
         commit-message: ${{ env.COMMIT_MESSAGE }}
+        title: ${{ env.COMMIT_MESSAGE }}
