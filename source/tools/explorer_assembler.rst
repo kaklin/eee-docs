@@ -2,6 +2,16 @@
 Cadence ADE
 ===========
 
+Library
+-------
+
+Find and delete locks in library
+
+.. code-block:: bash
+
+	find . -name "*lck*"
+	find . -name "*lck*" -delete
+
 
 Useful Expressions
 ------------------
