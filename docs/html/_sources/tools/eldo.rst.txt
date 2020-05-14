@@ -17,3 +17,10 @@ Exclude nets from global V probe
 	+ EXCEPT=NET*     ! Remove all nets not explicitly named
 	+ EXCEPT=XI0.NET* ! Remove all not explicitly named nets in XI0
 	+ EXCEPT=X*.XG*   ! Remove all nets inside digital gates 
+
+Custom accuracy settings.
+
+.. code::
+
+	.OPTION GMIN=1e-18 EPS=1e-9
+	
