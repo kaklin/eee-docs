@@ -129,6 +129,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="eldo.html">eldo</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Cadence ADE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#library">Library</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#useful-expressions">Useful Expressions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#explorer">Explorer</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#assembler">Assembler</a></li>
@@ -207,6 +208,14 @@
             
   <div class="section" id="cadence-ade">
 <h1>Cadence ADE<a class="headerlink" href="#cadence-ade" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="library">
+<h2>Library<a class="headerlink" href="#library" title="Permalink to this headline">¶</a></h2>
+<p>Find and delete locks in library</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>find . -name <span class="s2">&quot;*lck*&quot;</span>
+find . -name <span class="s2">&quot;*lck*&quot;</span> -delete
+</pre></div>
+</div>
+</div>
 <div class="section" id="useful-expressions">
 <h2>Useful Expressions<a class="headerlink" href="#useful-expressions" title="Permalink to this headline">¶</a></h2>
 <p>Plot a digital bus from analog waveforms</p>
