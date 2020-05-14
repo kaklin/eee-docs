@@ -12,4 +12,4 @@ Semiconductor Fundamentals
 
 :math:`E_k = E_p - \Phi_m` - kinetic energy of an electron released from a metal by a photon with energy :math:`E_p`.
 
-try a new commit message with an $
+Yet another attempt.
