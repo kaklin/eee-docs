@@ -1,6 +1,20 @@
-===========
-Cadence ADE
-===========
+================
+Cadence Virtuoso
+================
+
+Schematic
+---------
+
+.. csv-table::
+	:file: schematic_keys.csv
+	:header: Function,Key
+
+Layout
+------
+
+.. csv-table::
+	:file: layout_keys.csv
+	:header: Function,Key
 
 Library
 -------
@@ -12,9 +26,12 @@ Find and delete locks in library
 	find . -name "*lck*"
 	find . -name "*lck*" -delete
 
+ADE Explorer
+------------
 
 Useful Expressions
-------------------
+******************
+
 Plot a digital bus from analog waveforms
 
 .. code-block::
@@ -28,8 +45,5 @@ Adjust list() as needed, MSB first. Example for 8 bit signal.
 "Unsigned Decimal" can be one of: "Binary" "Signed Decimal"
 
 
-Explorer
---------
-
-Assembler
----------
+ADE Assembler
+-------------

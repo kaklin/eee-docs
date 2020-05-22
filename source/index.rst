@@ -63,7 +63,7 @@
    :maxdepth: 2
 
    tools/eldo
-   tools/explorer_assembler
+   tools/virtuoso
 
 .. toctree::
    :caption: Resources
