@@ -1,2 +1,25 @@
-Draw wire,``w``
+Draw wire,``w``,Click the middle mouse button to toggle routing style
 Draw thick wire,``W``
+Label wire,``l``,Separate multiple names with spaces
+Add pin,``p``
+Add instance,``i``
+Undo,``u``
+Redo,``U``
+Copy,``c``
+Rotate,``r``
+Move,``m``
+Fit to window,``f``
+Zoom out/in,``[`` / ``]``
+Zoom to rectangle,``z``
+Previous zoom level,``Z``
+Descend into instance (read),``e``
+Descend into instance (edit),``E``
+Return to higher hierarchy level,``Ctrl`` + ``e``
+Save,``x``,Will delete undo history!
+Check and save,``X``,Will delete undo history!
+Change display options,``o``
+Magnifier,``.``
+Change object properties,``q``
+Text note,``Shift`` + ``n``
+Create symbol,``Alt`` + ``c`` > ``c`` > ``c``
+Open symbol,``Alt`` + ``f`` > ``e``
