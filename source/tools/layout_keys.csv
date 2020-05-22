@@ -1,2 +1,36 @@
 Draw rectangle,``r``
 Draw path segment,``p``
+Draw polygon,``P``
+Undo,``u``
+Redo,``U``
+Save,``F2``
+Copy,``c``
+Repeat Copy,``Alt`` + ``e`` > ``r, r`` > ``Enter``,Press ``.`` to repeat initial copy.
+Move,``m``
+Quick align,``a``
+Stretch,``s``
+Rotate,``O``
+Ruler,``k``
+Delete rulers,``K``
+Display option,``e``
+Layout editor options,``E``
+Zoom in,``Ctrl`` + ``Z``
+Zoom out,``Z``
+Zoom to rectangle,``z``
+Fit view to window,``f``
+Previous zoom level,``w``
+Next zoom level,``W``
+Create via,``o``
+Add pin label,``l``
+Add instance,``i``
+Change select mode,``F4``,Edges or complete shapes
+Show instance detail,``F``
+Hide instance detail,``Ctrl`` + ``f``
+Cut into shape,``C``
+Merge shapes,``M``
+Add to shape,``R``
+Options of current tool,``F3``
+Object properties,``q``
+Descend (read/write),``X``
+Descend (edit in place),``x``
+Ascend,``B``
