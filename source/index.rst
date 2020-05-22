@@ -73,6 +73,7 @@
    resources/analog
    resources/digital
    resources/utils_py
+   resources/simulation
 
 
 
