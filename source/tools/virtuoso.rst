@@ -7,14 +7,14 @@ Schematic
 
 .. csv-table::
 	:file: schematic_keys.csv
-	:header: Function,Key
+	:header: Function,Key,Notes
 
 Layout
 ------
 
 .. csv-table::
 	:file: layout_keys.csv
-	:header: Function,Key
+	:header: Function,Key,Notes
 
 Library
 -------
