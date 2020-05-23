@@ -5,7 +5,7 @@ Undo,``u``
 Redo,``U``
 Save,``F2``
 Copy,``c``
-Repeat Copy,``Alt`` + ``e`` > ``r, r`` > ``Enter``,Press ``.`` to repeat initial copy.
+Repeat Copy,``Alt`` + ``e`` > ``r r`` > ``Enter``,Press ``.`` to repeat initial copy.
 Move,``m``
 Quick align,``a``
 Stretch,``s``
