@@ -2,6 +2,16 @@
 Digital
 =======
 
+Papers
+======
+
+`Sunburst Design <http://www.sunburst-design.com/papers/>`_ - Clifford Cummings papers. Good resources on FSMs, CDC, FIFOs.
+
+Courses
+=======
+
+`Design and Implementation of VLSI Systems <http://scale.engin.brown.edu/classes/EN1600S08/links.html>`_ - Brown University course.
+
 Diagram Editors
 ===============
 
