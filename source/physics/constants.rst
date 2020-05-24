@@ -86,3 +86,13 @@ EM Radiation Ranges
 +--------+---------------+-----------+------------+
 | FIR    |0.0248 - 0.0012|50e3 - 1e6 | 6.0 - 0.3  |
 +--------+---------------+-----------+------------+
+
+Thermal Voltage
+===============
+
+.. math::
+    V_T = \frac{kT}{q}
+
+.. csv-table::	
+	:file: thermal_voltages.csv
+	:header: T (K),T (:math:`^oC`), :math:`V_T`
