@@ -12,10 +12,22 @@ def celsius_to_kelvin(C):
     return C + 273.15
 
 
+def kelvin_to_celsius(K):
+    return K - 273.15
+
+
 vband_gap = np.vectorize(band_gap)
-start = celsius_to_kelvin(-80)
-stop = celsius_to_kelvin(130)
+vcelsius_to_bandgap = np.vectorize(celsius_to_kelvin)
+start = -80
+stop = 130
 x = np.arange(start, stop, 5)
-E = vband_gap(x)
-plt.plot(x, E)
+E = vband_gap(vcelsius_to_bandgap(x))
+fig, ax = plt.subplots(figsize=(8.5, 4.8))
+secax = ax.secondary_xaxis('top', functions=(celsius_to_kelvin, kelvin_to_celsius))
+secax.set_xlabel('Temperature ($K$)')
+ax.set_xlabel('Temperature ($ \degree C $)')
+ax.set_ylabel('Bandgap ($eV$)')
+ax.plot(x, E)
+ax.grid()
+
 plt.show()

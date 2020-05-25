@@ -87,7 +87,10 @@
               <p class="caption"><span class="caption-text">Physics</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="physics.html">Semiconductor Fundamentals</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Silicon Bandgap</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Silicon Bandgap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#dependence-on-temperature">Dependence on temperature </a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="constants.html">Constants</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Semiconductor Devices</span></p>
@@ -203,9 +206,20 @@
             
   <div class="section" id="silicon-bandgap">
 <h1>Silicon Bandgap<a class="headerlink" href="#silicon-bandgap" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="dependence-on-temperature">
+<h2>Dependence on temperature <a class="footnote-reference brackets" href="#id2" id="id1">1</a><a class="headerlink" href="#dependence-on-temperature" title="Permalink to this headline">¶</a></h2>
+<div class="math notranslate nohighlight">
+\[E_g(T) = E_g(0) - \frac{\alpha T^2}{T + \beta }\]</div>
+<p>where for silicon <span class="math notranslate nohighlight">\(E_g(0)\)</span> is 1.166eV, <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> are empirical fitting parameters 0.473meV/K and 636K respectively.</p>
 <p>(<a class="reference external" href="../physics/bandgap_vs_temp.py">Source code</a>, <a class="reference external" href="../physics/bandgap_vs_temp.png">png</a>, <a class="reference external" href="../physics/bandgap_vs_temp.hires.png">hires.png</a>, <a class="reference external" href="../physics/bandgap_vs_temp.pdf">pdf</a>)</p>
 <div class="figure align-default">
 <img alt="../_images/bandgap_vs_temp.png" src="../_images/bandgap_vs_temp.png" />
+</div>
+<dl class="footnote brackets">
+<dt class="label" id="id2"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="https://ecee.colorado.edu/~bart/book/book/chapter2/ch2_3.htm">https://ecee.colorado.edu/~bart/book/book/chapter2/ch2_3.htm</a></p>
+</dd>
+</dl>
 </div>
 </div>
 
