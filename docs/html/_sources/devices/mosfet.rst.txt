@@ -92,22 +92,6 @@ Small signal transconductance:
 
 :math:`\beta = K' \frac{W}{L}`
 
-
-**Constants**
-
-:math:`k=1.3806e^{-23}` J⋅K\ :sup:`-1` - Boltzmann constant
-
-:math:`q=1.602e^{-19}` C - elementary charge
-
-:math:`\epsilon_0=8.854` pF⋅m\ :sup:`-1` - permittivity of free space
-
-:math:`\epsilon_{Si}=11.7 \epsilon_0`
-
-:math:`\epsilon_{ox}=3.9 \epsilon_0`
-
-
-
-
 .. Models
 .. ======
 .. BSIM
