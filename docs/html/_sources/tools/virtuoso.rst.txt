@@ -47,3 +47,8 @@ Adjust list() as needed, MSB first. Example for 8 bit signal.
 
 ADE Assembler
 -------------
+
+Customization Script
+--------------------
+
+https://relyveld.wordpress.com/cadence-page/
