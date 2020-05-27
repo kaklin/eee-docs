@@ -19,6 +19,7 @@ Save,``x``,Will delete undo history!
 Check and save,``X``,Will delete undo history!
 Change display options,``o``
 Magnifier,``.``
+Highlight net,``9``,Right click on net to remove
 Change object properties,``q``
 Text note,``Shift`` + ``n``
 Create symbol,``Alt`` + ``c`` > ``c`` > ``c``
