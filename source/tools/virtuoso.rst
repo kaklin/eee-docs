@@ -12,6 +12,8 @@ Schematic
 Layout
 ------
 
+To highlight an electrical net, select Connectivity > Nets > Mark... Then use ``F3`` to select the layers via which you want to trace. Turn off NP, PP, CO to prevent highlighting the substrate.
+
 .. csv-table::
 	:file: layout_keys.csv
 	:header: Function,Key,Notes
