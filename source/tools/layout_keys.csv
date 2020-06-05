@@ -12,10 +12,11 @@ Quick align,``a``
 Stretch,``s``
 Rotate,``O``
 Ruler,``k``
+Deselect,``Ctrl`` + ``d``
 Delete rulers,``K``
 Display option,``e``
 Layout editor options,``E``
-Zoom in,``Ctrl`` + ``Z``
+Zoom in,``Ctrl`` + ``z``
 Zoom out,``Z``
 Zoom to rectangle,``z``
 Fit view to window,``f``
