@@ -12,9 +12,22 @@ Schematic
 Layout
 ------
 
+Tips
+****
+
 To highlight an electrical net, select Connectivity > Nets > Mark... Then use ``F3`` to select the layers via which you want to trace. Turn off NP, PP, CO to prevent highlighting the substrate.
 
+For labels generated inside scripts it's usefule to use Tools -> Create Pins From Labels after importing them into a layout. 
+
+Preferences
+***********
+
+``E`` > Dim Major Dots
+
 Options > Selection > Disable "Select objects larger than the window"
+
+Shortcuts
+*********
 
 .. csv-table::
 	:file: layout_keys.csv
