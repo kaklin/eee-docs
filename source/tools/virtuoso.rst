@@ -5,6 +5,13 @@ Cadence Virtuoso
 Schematic
 ---------
 
+Tips
+****
+
+Using netSet and Net Expressions. In the lower hiererchy cell use Create > Net Expression... and give it a name and a global default value. In the upper hierarchy level use Edit > Net Expression > Available Properties... to connect the net to one existing in the upper hierarchy level. 
+
+Using variables as instance parameters. In the instance parameter insert ``pPar("varname")``. ``varname`` will now appear as a parameter you can set froma higher hierarchy level. N.B. May need to edit the CDF param through the CIW window. Or open a view where the pPar is used and try using the command ``artGenerateHierSymbolCDF(geGetEditCellView())`` in the CIW window.
+
 .. csv-table::
 	:file: schematic_keys.csv
 	:header: Function,Key,Notes
