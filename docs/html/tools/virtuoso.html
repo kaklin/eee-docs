@@ -129,9 +129,12 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="eldo.html">eldo</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Cadence Virtuoso</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#schematic">Schematic</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#layout">Layout</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#schematic">Schematic</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tips">Tips</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#layout">Layout</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Tips</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#preferences">Preferences</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#shortcuts">Shortcuts</a></li>
 </ul>
@@ -221,6 +224,11 @@
 <h1>Cadence Virtuoso<a class="headerlink" href="#cadence-virtuoso" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="schematic">
 <h2>Schematic<a class="headerlink" href="#schematic" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tips">
+<h3>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">¶</a></h3>
+<p>Using netSet and Net Expressions. In the lower hiererchy cell use Create &gt; Net Expression… and give it a name and a global default value. In the upper hierarchy level use Edit &gt; Net Expression &gt; Available Properties… to connect the net to one existing in the upper hierarchy level.</p>
+<p>Using variables as instance parameters. In the instance parameter insert <code class="docutils literal notranslate"><span class="pre">pPar(&quot;varname&quot;)</span></code>. <code class="docutils literal notranslate"><span class="pre">varname</span></code> will now appear as a parameter you can set froma higher hierarchy level. N.B. May need to edit the CDF param through the CIW window. Or open a view where the pPar is used and try using the command <code class="docutils literal notranslate"><span class="pre">artGenerateHierSymbolCDF(geGetEditCellView())</span></code> in the CIW window.</p>
+<p>Series components. e.g. a ring oscillator with series inverters. Input net: <code class="docutils literal notranslate"><span class="pre">IN,A&lt;0:9&gt;</span></code>. Output net: <code class="docutils literal notranslate"><span class="pre">A&lt;0:9&gt;,OUT</span></code>.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33%" />
@@ -341,10 +349,11 @@
 </tbody>
 </table>
 </div>
+</div>
 <div class="section" id="layout">
 <h2>Layout<a class="headerlink" href="#layout" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="tips">
-<h3>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h3>Tips<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>To highlight an electrical net, select Connectivity &gt; Nets &gt; Mark… Then use <code class="docutils literal notranslate"><span class="pre">F3</span></code> to select the layers via which you want to trace. Turn off NP, PP, CO to prevent highlighting the substrate.</p>
 <p>For labels generated inside scripts it’s usefule to use Tools -&gt; Create Pins From Labels after importing them into a layout.</p>
 </div>
