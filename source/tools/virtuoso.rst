@@ -12,6 +12,8 @@ Using netSet and Net Expressions. In the lower hiererchy cell use Create > Net E
 
 Using variables as instance parameters. In the instance parameter insert ``pPar("varname")``. ``varname`` will now appear as a parameter you can set froma higher hierarchy level. N.B. May need to edit the CDF param through the CIW window. Or open a view where the pPar is used and try using the command ``artGenerateHierSymbolCDF(geGetEditCellView())`` in the CIW window.
 
+Series components. e.g. a ring oscillator with series inverters. Input net: ``IN,A<0:9>``. Output net: ``A<0:9>,OUT``.
+
 .. csv-table::
 	:file: schematic_keys.csv
 	:header: Function,Key,Notes
