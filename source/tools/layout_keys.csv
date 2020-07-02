@@ -36,5 +36,6 @@ Object properties,``q``
 Descend (read/write),``X``
 Descend (edit in place),``x``
 Ascend,``B``
+Toggle info baloon, ``Ctrl`` + ``b``
 Mark net,``Alt`` + ``n`` > ``n m``
 Remove net highlights,``Alt`` + ``n`` > ``n n``
