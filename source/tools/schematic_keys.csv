@@ -6,8 +6,8 @@ Add instance,``i``
 Undo,``u``
 Redo,``U``
 Copy,``c``
+Move,``m``,Middle click to rotate while moving
 Rotate,``r``
-Move,``m``
 Fit to window,``f``
 Zoom out/in,``[`` / ``]``
 Zoom to rectangle,``z``
