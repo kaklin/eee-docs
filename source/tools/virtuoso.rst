@@ -14,6 +14,9 @@ Using variables as instance parameters. In the instance parameter insert ``pPar(
 
 Series components. e.g. a ring oscillator with series inverters. Input net: ``IN,A<0:9>``. Output net: ``A<0:9>,OUT``.
 
+Shortcuts
+*********
+
 .. csv-table::
 	:file: schematic_keys.csv
 	:header: Function,Key,Notes
