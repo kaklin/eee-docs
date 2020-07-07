@@ -131,12 +131,13 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Cadence Virtuoso</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#schematic">Schematic</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tips">Tips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shortcuts">Shortcuts</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#layout">Layout</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id1">Tips</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#preferences">Preferences</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#shortcuts">Shortcuts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Shortcuts</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#library">Library</a></li>
@@ -226,9 +227,12 @@
 <h2>Schematic<a class="headerlink" href="#schematic" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="tips">
 <h3>Tips<a class="headerlink" href="#tips" title="Permalink to this headline">¶</a></h3>
-<p>Using netSet and Net Expressions. In the lower hiererchy cell use Create &gt; Net Expression… and give it a name and a global default value. In the upper hierarchy level use Edit &gt; Net Expression &gt; Available Properties… to connect the net to one existing in the upper hierarchy level.</p>
+<p>Using netSet and Net Expressions. In the lower hiererchy cell use Create &gt; Net Expression… and give it a name and a global default value. In the upper hierarchy level use Edit &gt; Net Expression &gt; Available Properties… to connect the net to one existing in the upper hierarchy level. If a component only accepts net connections through netSet, and you want to use a net expression there, use the format <code class="docutils literal notranslate"><span class="pre">[&#64;net_name:%:net_name!]</span></code>.</p>
 <p>Using variables as instance parameters. In the instance parameter insert <code class="docutils literal notranslate"><span class="pre">pPar(&quot;varname&quot;)</span></code>. <code class="docutils literal notranslate"><span class="pre">varname</span></code> will now appear as a parameter you can set froma higher hierarchy level. N.B. May need to edit the CDF param through the CIW window. Or open a view where the pPar is used and try using the command <code class="docutils literal notranslate"><span class="pre">artGenerateHierSymbolCDF(geGetEditCellView())</span></code> in the CIW window.</p>
 <p>Series components. e.g. a ring oscillator with series inverters. Input net: <code class="docutils literal notranslate"><span class="pre">IN,A&lt;0:9&gt;</span></code>. Output net: <code class="docutils literal notranslate"><span class="pre">A&lt;0:9&gt;,OUT</span></code>.</p>
+</div>
+<div class="section" id="shortcuts">
+<h3>Shortcuts<a class="headerlink" href="#shortcuts" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33%" />
@@ -274,12 +278,12 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">c</span></code></p></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p>Rotate</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">r</span></code></p></td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><p>Move</p></td>
+<tr class="row-even"><td><p>Move</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">m</span></code></p></td>
+<td><p>Middle click to rotate while moving</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rotate</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">r</span></code></p></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>Fit to window</p></td>
@@ -346,6 +350,10 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">Alt</span></code> + <code class="docutils literal notranslate"><span class="pre">f</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">e</span></code></p></td>
 <td></td>
 </tr>
+<tr class="row-even"><td><p>Make editable / read only</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Alt</span></code> + <code class="docutils literal notranslate"><span class="pre">m</span></code></p></td>
+<td></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -362,8 +370,8 @@
 <p><code class="docutils literal notranslate"><span class="pre">E</span></code> &gt; Dim Major Dots</p>
 <p>Options &gt; Selection &gt; Disable “Select objects larger than the window”</p>
 </div>
-<div class="section" id="shortcuts">
-<h3>Shortcuts<a class="headerlink" href="#shortcuts" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id2">
+<h3>Shortcuts<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 33%" />
