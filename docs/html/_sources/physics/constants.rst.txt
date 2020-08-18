@@ -30,16 +30,18 @@ Relative Permittivities
 =======================
 
 .. math::
-    \varepsilon_r = \frac{\varepsilon}{\varepsilon_0}
+    \varepsilon = \varepsilon_r \varepsilon_0
 
-================ ============
+================ =====================
+Material         :math:`\varepsilon_r`
+================ =====================
 Vacuum           1
 Air              1.000589
 Silicon          11.68
 Silicon nitride  7-8
 Silicon dioxide  3.9
 GaAs             12.4 
-================ ============
+================ =====================
 
 Material Band Gaps
 ==================
