@@ -1,3 +1,4 @@
+Options of current tool,``F3``,Very useful
 Draw rectangle,``r``
 Draw path segment,``p``
 Draw polygon,``P``
@@ -31,7 +32,6 @@ Hide instance detail,``Ctrl`` + ``f``
 Cut into shape,``C``
 Merge shapes,``M``
 Add to shape,``R``
-Options of current tool,``F3``
 Object properties,``q``
 Descend (read/write),``X``
 Descend (edit in place),``x``
@@ -39,3 +39,5 @@ Ascend,``B``
 Toggle info baloon, ``Ctrl`` + ``b``
 Mark net,``Alt`` + ``n`` > ``n m``
 Remove net highlights,``Alt`` + ``n`` > ``n n``
+Toggle gravity,``g``
+Draw metal buses,``Ctrl`` + ``Shift`` + ``x``,``F3`` to change spacing, widths. Right click for via options.
