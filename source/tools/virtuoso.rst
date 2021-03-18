@@ -31,6 +31,8 @@ To highlight an electrical net, select Connectivity > Nets > Mark... Then use ``
 
 For labels generated inside scripts it's usefule to use Tools -> Create Pins From Labels after importing them into a layout. 
 
+When creating a cell to mosaic, you can draw a rectangle in the ``instance;drawing`` layer to define the instance outline size.
+
 Preferences
 ***********
 
