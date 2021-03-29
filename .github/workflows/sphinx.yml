@@ -28,16 +28,15 @@ jobs:
         pwd
         ls
     - name: Sphinx Make
+      id: sphinx
       run: |
         make clean
         make html
         last_commit=`git log -1 --pretty=%B`
         export MSG=`echo $last_commit "[auto-build]"`
-        echo "::set-env name=COMMIT_MESSAGE::$MSG"
+        echo ::set-output name=commit_message::$MSG
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v2
-      env:
-        COMMIT_MESSAGE: ${{ env.COMMIT_MESSAGE }}
       with:
-        commit-message: ${{ env.COMMIT_MESSAGE }}
-        title: ${{ env.COMMIT_MESSAGE }}
+        commit-message: ${{ steps.sphinx.commit_message }}
+        title: ${{ steps.sphinx.commit_message }}
