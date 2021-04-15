@@ -40,4 +40,4 @@ Toggle info baloon, ``Ctrl`` + ``b``
 Mark net,``Alt`` + ``n`` > ``n m``
 Remove net highlights,``Alt`` + ``n`` > ``n n``
 Toggle gravity,``g``
-Draw metal buses,``Ctrl`` + ``Shift`` + ``x``,``F3`` to change spacing, widths. Right click for via options.
+Draw metal buses,``Ctrl`` + ``Shift`` + ``x``,``F3`` to change spacing and widths. Right click for via options.
