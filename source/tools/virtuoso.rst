@@ -10,7 +10,7 @@ Tips
 
 Using netSet and Net Expressions. In the lower hiererchy cell use Create > Net Expression... and give it a name and a global default value. In the upper hierarchy level use Edit > Net Expression > Available Properties... to connect the net to one existing in the upper hierarchy level. If a component only accepts net connections through netSet, and you want to use a net expression there, use the format ``[@net_name:%:net_name!]``.
 
-Using variables as instance parameters. In the instance parameter insert ``pPar("varname")``. ``varname`` will now appear as a parameter you can set froma higher hierarchy level. N.B. May need to edit the CDF param through the CIW window. Or open a view where the pPar is used and try using the command ``artGenerateHierSymbolCDF(geGetEditCellView())`` in the CIW window.
+Using variables as instance parameters. In the instance parameter insert ``pPar("varname")``. Go to the ``CIW > Tools > CDF > Edit`` and add the ``varname`` to the Base CDF layer. ``varname`` will now appear as a parameter you can set when instancing your cell.
 
 Series components. e.g. a ring oscillator with series inverters. Input net: ``IN,A<0:9>``. Output net: ``A<0:9>,OUT``.
 
