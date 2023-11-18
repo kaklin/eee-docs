@@ -30,16 +30,18 @@ Relative Permittivities
 =======================
 
 .. math::
-    \varepsilon = \varepsilon_r \varepsilon_0
+    \kappa = \varepsilon = \varepsilon_r \varepsilon_0
 
 ================ =====================
 Material         :math:`\varepsilon_r`
 ================ =====================
 Vacuum           1
 Air              1.000589
-Silicon          11.68
-Silicon nitride  7-8
+PTFE             2.1
+Polystyrene      2.4-2.7
 Silicon dioxide  3.9
+Silicon nitride  7-8
+Silicon          11.68
 GaAs             12.4 
 ================ =====================
 
