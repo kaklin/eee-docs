@@ -1,6 +1,7 @@
 name: sphinx-build
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'source/**'
@@ -34,6 +35,7 @@ jobs:
         make html
         last_commit=`git log -1 --pretty=%B`
         export MSG=`echo "[auto-build] ${last_commit}"`
+        echo ${MSG}
         echo "::set-output name=commit_message::${MSG}"
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v5
