@@ -11,3 +11,7 @@ https://www.youtube.com/watch?v=8UdNB3ZY4Ks
 Etching
 
 https://www.youtube.com/watch?v=po-nlRUQkbI
+
+History of the Photomask
+
+https://www.youtube.com/watch?v=Pt9NEnWmyMo
