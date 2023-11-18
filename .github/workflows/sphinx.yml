@@ -39,5 +39,5 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v5
       with:
-        commit-message: ${{ steps.sphinx.commit_message }}
-        title: ${{ steps.sphinx.commit_message }}
+        commit-message: ${{ steps.sphinx.outputs.commit_message }}
+        title: ${{ steps.sphinx.outputs.commit_message }}
