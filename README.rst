@@ -1,11 +1,15 @@
 ==========================================
 Electrical and Electronic Engineering Docs
 ==========================================
-A curated reference for select electronics topics.
+A curated reference for select electronics engineering topics.
 
 Hosted on `github pages <https://kaklin.github.io/eee-docs>`_.
 
-Edit in the `repository <https://github.com/kaklin/eee-docs>`_.
+
+Build to Github Pages
+---------------------
+
+This is managed through Github workflow, with an action on a push to the source directory.
 
 
 Contributing
@@ -15,6 +19,7 @@ Contributing
 Local testing
 -------------
 
+- Clone the repo
 - Set up a virtual environment 
 
 ``pip install -r requirements.txt``
@@ -27,3 +32,5 @@ Local testing
 - View results by going to /docs and launching
 
 ``python -m http.server``
+
+- This will host the build results at http://127.0.0.1:8000
