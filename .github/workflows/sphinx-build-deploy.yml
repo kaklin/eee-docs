@@ -32,7 +32,7 @@ jobs:
         # export MSG=`echo "[auto-build] ${last_commit}"`
         # echo "commit_message=${MSG}" >> $GITHUB_OUTPUT
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v2
       with:
         # make this the gzip tar
         path: ./docs.tar.gz
