@@ -27,7 +27,8 @@ jobs:
       run: |
         make clean
         make html
-        tar -czvf ./docs.tar.gz ./docs
+        mkdir build
+        tar -czvf ./build/docs.tar.gz ./docs
         # last_commit=`git log -1 --pretty=%B`
         # export MSG=`echo "[auto-build] ${last_commit}"`
         # echo "commit_message=${MSG}" >> $GITHUB_OUTPUT
@@ -35,7 +36,7 @@ jobs:
       uses: actions/upload-pages-artifact@v2
       with:
         # make this the gzip tar
-        path: ./docs.tar.gz
+        path: ./build/
         
   # Deployment job
   deploy:
