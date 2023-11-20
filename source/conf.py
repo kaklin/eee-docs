@@ -14,11 +14,12 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
+import datetime
 
 # -- Project information -----------------------------------------------------
 
-project = 'Electrical and Electronics Engineering Docs'
-copyright = '2020, Filip Kaklin'
+project = 'EEE Docs'
+copyright = f'{datetime.date.today().year}, Filip Kaklin'
 author = 'Filip Kaklin'
 
 # The full version, including alpha/beta/rc tags

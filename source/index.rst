@@ -1,9 +1,10 @@
-.. eee-docs documentation master file, created by
-   sphinx-quickstart on Thu Feb  6 11:14:41 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. eee-docs documentation master file
 
-.. include:: ../README.rst
+Electrical and Electronics Engineering Documentation
+====================================================
+
+An online resource for learning about EEE topics. 
+
 
 .. toctree::
    :caption: Physics
@@ -76,4 +77,7 @@
    resources/simulation
 
 
+Contributing
+------------
 
+View the source and contribute in the `repository <https://github.com/kaklin/eee-docs>`_.
