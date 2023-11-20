@@ -1,7 +1,0 @@
-========
-Counters
-========
-
-Parallel Counters
------------------
-
