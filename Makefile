@@ -21,12 +21,10 @@ venv:
 	./venv/bin/python3 -m pip install -r requirements.txt
 
 clean:
-	-rm -rf $(BUILDDIR)/html*
-	-rm -rf $(BUILDDIR)/doctrees*
-	-rm -rf $(BUILDDIR)/plot_directive*
+	-rm -rf $(BUILDDIR)
 
 html:
-	mkdir ./docs
+	mkdir -p ./docs
 	touch ./docs/.nojekyll
 	echo "<head>\n<meta http-equiv=\"refresh\" content=\"0; url=./html/index.html\" />\n</head>" > ./docs/index.html
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
