@@ -26,6 +26,9 @@ clean:
 	-rm -rf $(BUILDDIR)/plot_directive*
 
 html:
+	mkdir ./docs
+	touch ./docs/.nojekyll
+	echo "<head>\n<meta http-equiv=\"refresh\" content=\"0; url=./html/index.html\" />\n</head>" > ./docs/index.html
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 %: Makefile
