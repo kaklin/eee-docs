@@ -2,5 +2,5 @@
 *.sublime-project
 .buildinfo
 objects.inv
-/docs/*
+docs
 eee-venv
