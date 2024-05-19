@@ -73,7 +73,7 @@ An online resource for learning about EEE topics.
    resources/physics
    resources/analog
    resources/digital
-   resources/utils_py
+   resources/utilities
    resources/simulation
 
 
